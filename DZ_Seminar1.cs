@@ -1,0 +1,79 @@
+using System;
+
+public class Answer {
+    static void CompareNumbers(int firstNumber, int secondNumber)
+    {
+        // Введите свое решение ниже
+    if (firstNumber>secondNumber)
+    {
+        Console.WriteLine("Первое число больше");
+    }
+    else if (firstNumber<secondNumber)
+    {
+        Console.WriteLine("Второе число больше");
+    }
+ else
+    {
+        Console.WriteLine("Числа равны");
+    }
+    }
+
+
+  // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args) {
+        int firstNumber, secondNumber;
+
+        if (args.Length >= 2) {
+            firstNumber = int.Parse(args[0]);
+            secondNumber = int.Parse(args[1]);
+        } else {
+           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            firstNumber = 2;
+            secondNumber = 5;
+        }
+
+        // Не удаляйте строки ниже
+        CompareNumbers(firstNumber, secondNumber);
+    }
+}
+
+
+
+    
+  static int FindMax(int a, int b, int c)
+    {
+      // Введите свое решение ниже
+    int result = a;
+    if (b > result)
+    {
+        result = b;
+    }
+    if (c > result)
+    {
+        result = c;
+    }
+
+    return (result);
+    
+    }
+
+  // Не удаляйте и не меняйте метод Main! 
+  static public void Main(string[] args) {
+        int a, b, c;
+
+        if (args.Length >= 3) {
+           a = int.Parse(args[0]);
+           b = int.Parse(args[1]);
+           c = int.Parse(args[2]);
+        } else {
+           // Здесь вы можете поменять значения для отправки кода на Выполнение
+           a = 5;
+           b = 6;
+           c = 7;
+        }
+
+        // Не удаляйте строки ниже
+        int result = FindMax(a, b, c);
+        System.Console.WriteLine($"{result}");
+    }
+}
